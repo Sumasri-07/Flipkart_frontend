@@ -12,6 +12,7 @@ function Login() {
         const timer = setTimeout(() => {
             setLoading(false);
         }, 3000); // Change 3000 to however many milliseconds you want the loading to last
+        
 
         return () => clearTimeout(timer); // Cleanup timer on component unmount
     }, []);
